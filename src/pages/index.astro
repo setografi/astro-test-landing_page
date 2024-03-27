@@ -1,5 +1,7 @@
 ---
-import HomePage from "./HomePage.astro"
+
+import HeaderEvent from "../components/HeaderEvent";
+import HomePage from "../parts/HomePage.astro";
 import "../styles/App.css"
 
 import "remixicon/fonts/remixicon.css"
@@ -16,6 +18,7 @@ const title = "Portofolio Saya";
 		<title>{title}</title>
 	</head>
 	<body>
+		<HeaderEvent />
 		<HomePage />
 	</body>
 </html>
