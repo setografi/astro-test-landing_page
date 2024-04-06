@@ -1,20 +1,15 @@
 ---
-import { getImage } from "astro:assets";
-import myBackground from "../assets/background.jpg";
 import Animation from "../components/AnimationEvent.astro";
-
-// const optimizedBackground = await getImage({src: myBackground, format: 'webp'})
 const name = "WAHYU SETO PRANATA";
 ---
 
 <section>
   <Animation />
-  <div class="pl-20 md:pl-32 lg:pl-52 flex items-center h-screen relative z-10">
+  <div class="pl-4 md:pl-20 lg:pl-52 flex items-center h-[100dvh] relative z-10">
     <div class="bg-BlackText flex justify-start">
       <h2 class="px-2 md:px-4 py-1 lg:py-[6px] text-base md:text-xl lg:text-3xl font-medium text-WhiteBack tracking-wide">
         {name}
       </h2>
     </div>
   </div>
-  <!-- <div class="h-screen bg-cover bg-center flex items-center" style={`background-image: url(${optimizedBackground.src});`}></div> -->
 </section>
