@@ -1,9 +1,6 @@
 ---
 import WelcomeEvent from "../components/WelcomeEvent.astro";
 import AboutMe from "../components/AboutMe.astro";
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 ---
 
 <>
@@ -19,7 +16,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
     </section>
     
 </div>
-    <script>
+    <!-- <script>
+      import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
     
         export let onLoad = () => {
           gsap.registerPlugin(ScrollTrigger);
@@ -39,5 +38,5 @@ gsap.to(sections, {
   }
 });
         };
-      </script>
+      </script> -->
 </>
